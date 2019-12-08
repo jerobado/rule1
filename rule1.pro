@@ -13,3 +13,6 @@ debug:DESTDIR = build/debug
 
 # for releasing
 release:DESTDIR = build/release
+
+DISTFILES += \
+    .gitignore
