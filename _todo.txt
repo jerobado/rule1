@@ -1,0 +1,12 @@
+Make it work
+Make it right
+Make it fast
+------
+
+rule1 - Don't lose money
+DEADLINE: TBD
+
+Today's essentials
+[] fix debug and release files
+
+

@@ -15,4 +15,6 @@ debug:DESTDIR = build/debug
 release:DESTDIR = build/release
 
 DISTFILES += \
-    .gitignore
+    .gitignore \
+    README.md \
+    _todo.txt
