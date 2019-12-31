@@ -19,7 +19,7 @@ void show_help(string name)
          << "\t" <<"+100.00% needed gain just to recover your current loss\n"
          << "Options:\n"
          << "\t -h, --help\t\tDisplay this help message.\n"
-         << "\t -v, --version\t\tDisplay application version information."
+         << "\t -V, --version\t\tDisplay application version information."
          << endl;
 }
 
@@ -36,7 +36,7 @@ int main(int argc, char **argv)
     string raw_input = "";
 
 // [] TODO: getopt_long()
-while ((opt = getopt(argc, argv, "-hv")) != -1)
+while ((opt = getopt(argc, argv, "-hV")) != -1)
 {
     switch (opt)
     {
@@ -55,7 +55,7 @@ while ((opt = getopt(argc, argv, "-hv")) != -1)
         case 'h':
             show_help(APP_NAME);
             break;
-        case 'v':
+        case 'V':
             printf("%s\n", VERSION);
             break;
         case '?':
