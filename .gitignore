@@ -1,6 +1,14 @@
-*.pro
-*.o
-_todo.txt
-
-# build files
+# Build files and folders
 build
+*.o
+
+# Qt stuff
+*.pro
+*.pro.user
+/.qmake.stash
+
+# VS Code stuff
+*.vscode
+
+# Personal files
+_todo.txt
