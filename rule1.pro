@@ -1,3 +1,7 @@
+# Commands:
+# > qmake -o Makefile rule1.pro     -> to generate a makefile
+# > make                            -> run make
+
 QT -= qui # use only the core module
 
 CONFIG += c++latest console
@@ -8,11 +12,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     rule1.cpp
 
-# debug files
-debug:DESTDIR = build/debug
+debug:DESTDIR = build/debug         # for debugging/development
+release:DESTDIR = build/release     # for releasing/production
 
-# for releasing
-release:DESTDIR = build/release
+TARGET = rule1
 
 DISTFILES += \
     .gitignore \
